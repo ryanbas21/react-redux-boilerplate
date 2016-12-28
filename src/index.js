@@ -12,6 +12,7 @@ render((
         <Route path='/Contact' component={Contact} />
         <Route path='/signup' component={Disclaimer} />
         <Route path='/login' component={Login} />
+        <Route path='/blog' component={Blog} />
     </Router>
     </Provider>
 ),document.getElementById('root'));
