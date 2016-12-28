@@ -5,7 +5,9 @@ const path = require('path');
 module.exports = {
  devtool: 'eval-source-map',
  entry: [
-	   path.join(__dirname, 'src/index.js')
+    'webpack-dev-server/client?http://0.0.0.0:8080', // WebpackDevServer host and port
+    'webpack/hot/only-dev-server', // "only" prevents reload on syntax errors
+	   path.join(__dirname, 'src/index')
    ],
  output: {
    path: path.join(__dirname, 'public/'),
@@ -13,7 +15,11 @@ module.exports = {
    publicPath: 'http://localhost:8080/'
  },
  plugins: [
-	 new webpack.HotModuleReplacementPlugin()
+     new ExtractTextPlugin('master.css', { allChunks: true }),
+     new webpack.DefinePlugin({
+     'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV || 'development'),
+   }),
+   new webpack.HotModuleReplacementPlugin()
  ],
  devServer: {
 		contentBase: './',
