@@ -1,4 +1,4 @@
-import { Router, Route, Link, browserHistory } from 'react-router';
+import { Router, Route, Link, browserHistory, IndexRoute } from 'react-router';
 import { render } from 'react-dom';
 import { Provider } from 'react-redux';
 import { store } from './store/store';
@@ -7,7 +7,11 @@ import React from 'react'
 render((
     <Provider store={store}>
     <Router history={browserHistory}>
-        <Route path='/' component={AppContainer} />
+        <IndexRoute path='/' component={AppContainer} />
+        <Route path='/subscribe' component={Subscribe} />
+        <Route path='/Contact' component={Contact} />
+        <Route path='/signup' component={Disclaimer} />
+        <Route path='/login' component={Login} />
     </Router>
     </Provider>
 ),document.getElementById('root'));

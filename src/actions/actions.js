@@ -1,4 +1,4 @@
-const subscribe = 'subscribe';
+const subscribe = 'subscribe'
 const addTodo = 'addTodo'
 const deleteTodo = 'deleteTodo'
 const editTodo = 'editTodo'

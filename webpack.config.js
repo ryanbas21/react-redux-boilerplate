@@ -45,6 +45,7 @@ module.exports = {
 		 presets: ['react', 'es2015', 'react-hmre']
 	   },
 	   test: /\.jsx?$/,
+       include: __dirname,
 	   exclude: /(node_modules|bower_components)/
    },
    {
