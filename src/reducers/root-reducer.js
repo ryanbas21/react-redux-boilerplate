@@ -1,18 +1,22 @@
 import redux from 'redux'
 import reactRedux from 'react-redux'
 import * as actions from '../actions/actions'
-import { subscribeReducer } from './reducers'
+import { addTodoReducer, deleteTodoReducer, editTodoReducer } from './reducers'
 import { store } from '../store/store'
 
 const initialState = {
-  subscribed: false
+  todos: {}
 };
 
 const rootReducer = (store = initialState, action) => {
   switch (action.type){
-    case 'subscribe':
+    case 'addTodo':
         return subscribeReducer(state, action);
+    case 'editTodo':
+        return editTodo(state,action)
+    case 'deleteTodo':
+        return editTodoReducer(state,action);
     default: return store;
   }
-};;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+};
 export default rootReducer;
