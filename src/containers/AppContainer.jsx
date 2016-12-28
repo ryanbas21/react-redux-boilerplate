@@ -16,4 +16,4 @@ class AppContainer extends Component {
 }
 
 
-render(<AppContainer />, document.getElementById('root'));
+module.exports = AppContainer;
