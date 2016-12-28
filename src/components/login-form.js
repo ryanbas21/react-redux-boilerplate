@@ -8,4 +8,4 @@ const LoginForm = props =>
 </form>
 
 
-export default LoginForm;
+module.exprts = LoginForm;

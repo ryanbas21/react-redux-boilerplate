@@ -1,4 +1,8 @@
 import React from 'react';
 
 const SubscribeComponent = props =>
-<div></div>
+<div>
+    subsub
+</div>
+
+module.exports = SubscribeComponent;

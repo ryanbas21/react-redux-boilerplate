@@ -1,10 +1,6 @@
 import React from 'react'
-import { Link } from 'inferno-router';
-import Contact from './containers/Contact';
-import Login from './containers/Login-Container';
-import SignUp from './containers/Signup';
-import Subscribe from './containers/Subscribe';
-import Disclaimer from './containers/Disclaimer-Container';
+import { Link } from 'react-router';
+
 
 const NavBar = props =>
 <nav className="breadcrumbs" role='menubar' ariaLabel="breadcrumbs">
@@ -14,8 +10,9 @@ const NavBar = props =>
       <li><Link to='/disclaimer'> Disclaimer </Link></li>
       <li><Link to='/login'> Log-In </Link></li>
       <li><Link to='/signup'> Sign Up </Link></li>
+      <li><Link to='/blog' > Blog </Link> </li>
       <li><Link to='/subscribe'> Subscribe </Link></li>
-    </ul>
-  </nav>
+  </ul>
+</nav>
 
-export default Navbar
+export default NavBar;

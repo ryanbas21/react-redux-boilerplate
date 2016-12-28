@@ -1,8 +1,8 @@
 import React from 'react';
 import SignupForm from '../components/Signup-Form'
-const Signup = props =>
+const SignupContainer = props =>
     <div>
         <SignupForm />
     </div>
 
-export default Signup;
+module.exports = SignupContainer;

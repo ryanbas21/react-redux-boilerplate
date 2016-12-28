@@ -1,9 +1,9 @@
 import React from 'react';
 import LoginForm from '../components/login-form'
 
-const Login = props =>
+const LoginContainer = props =>
 <div className='login-container'>
     <LoginForm />
 </div>
 
-export default Login;
+module.exports = LoginContainer;

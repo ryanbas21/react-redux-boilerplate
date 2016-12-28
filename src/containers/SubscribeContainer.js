@@ -6,4 +6,4 @@ const SubscribeContainer = props =>
     <Subscribe />
 </div>
 
-export default SubscribeContainer;
+module.exports = SubscribeContainer;

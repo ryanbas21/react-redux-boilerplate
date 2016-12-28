@@ -5,4 +5,4 @@ const BlogContainer = props =>
         <Blog />
     </div>
 
-export default BlogContainer
+module.exports = BlogContainer
