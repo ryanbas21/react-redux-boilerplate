@@ -3,7 +3,8 @@ import React from 'react';
 
 const TodoField = props =>
             <div>
-              <input ref={ input => this.todo = input } onSubmit={props.addTodo} type='text' /><button type='submit' onClick={props.addTodo}>Add</button>
+              <input ref={ input => props.todo = input } onKeyDown={(e) => props.addTodo(e)} type='text' />
+              <button type='submit' onClick={(e) => props.addTodo(e)}>Add</button>
             </div>
 
 export default TodoField;
