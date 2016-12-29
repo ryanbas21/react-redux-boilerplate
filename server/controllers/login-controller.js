@@ -1,6 +1,6 @@
 const sequelize = require('../database')
 const cookieParser = require('cookie-parser')
-const { User } = require('../models/user.model')
+const { User } = require('../model/user.model')
 const bcrypt = require('bcrypt')
 const saltRounds = 10;
 

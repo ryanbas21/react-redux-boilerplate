@@ -4,7 +4,7 @@ const bodyParser = require('body-parser')
 const cookieParser = require('cookie-parser')
 const cors = require('cors')
 const PORT = 3000;
-const { getUser, createUser } = require('./controllers/usercontroller');
+const { getUser, createUser } = require('./controllers/login-controller');
 
 bodyParser.urlencoded({ extended: false });
 app.use(bodyParser.json());
