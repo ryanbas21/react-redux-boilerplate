@@ -1,5 +1,5 @@
 import React from 'react'
-import { Router, Route, Link, browserHistory, IndexRoute, hashHistory } from 'react-router';
+import { Router, Route, Link, browserHistory, IndexRoute } from 'react-router';
 import { render } from 'react-dom';
 import { Provider } from 'react-redux';
 import { store } from './store/store';
@@ -15,7 +15,7 @@ import NotFound from './components/NotFound'
 
 render((
     <Provider store={store}>
-    <Router history={hashHistory}>
+    <Router history={browserHistory}>
     <Route path='/' component={AppContainer} >
         <IndexRoute component={HomeContainer} />
         <Route path='subscribe' component={SubscribeContainer} />
