@@ -4,7 +4,7 @@ import { store } from '../store/store';
 const Blog = props =>
 <div>
     <div id='blog-section'>
-        { store.blogPost }
+        <CreateBlog createdBlog={store.createBlog} />
     </div>
 This is the blog component
 <CreateBlog />
