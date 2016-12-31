@@ -5,17 +5,20 @@ import { addTodoReducer, deleteTodoReducer, editTodoReducer } from './reducers'
 import { store } from '../store/store'
 
 const initialState = {
-  todos: {}
+  blogText = '',
+  subcribed: false,
+
 };
 
 const rootReducer = (store = initialState, action) => {
   switch (action.type){
-    case 'addTodo':
+    case 'subscribe':
         return subscribeReducer(state, action);
-    case 'editTodo':
-        return editTodo(state,action)
-    case 'deleteTodo':
+    case 'editBlog':
+        return editTodo(state,action);
+    case 'submitBlog':
         return editTodoReducer(state,action);
+    case ''
     default: return store;
   }
 };

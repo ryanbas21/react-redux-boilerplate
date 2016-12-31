@@ -1,5 +1,5 @@
 const subscribe = 'subscribe'
-const addTodo = 'addTodo'
-const deleteTodo = 'deleteTodo'
-const editTodo = 'editTodo'
-export default { subscribe, addTodo, deleteTodo, editTodo };
+const editBlog = 'editBlog'
+const addBlog = 'addBlog'
+const deleteBlogPost = 'deleteBlogPost';
+export default { subscribe, subscribe, editBlog, addBlog, deleteBlogPost };
