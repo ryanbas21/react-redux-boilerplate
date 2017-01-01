@@ -6,8 +6,8 @@ const Blog = props =>
     <div id='blog-section'>
         <CreateBlog createdBlog={store.createBlog} />
     </div>
-This is the blog component
-<CreateBlog />
+   This is the blog component
+   <CreateBlog />
 </div>
 
 module.exports = Blog;
