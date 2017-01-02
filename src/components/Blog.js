@@ -4,10 +4,9 @@ import { store } from '../store/store';
 const Blog = props =>
 <div>
     <div id='blog-section'>
-        <CreateBlog createdBlog={store.createBlog} />
+        <CreateBlog  />
     </div>
    This is the blog component
-   <CreateBlog />
 </div>
 
 module.exports = Blog;

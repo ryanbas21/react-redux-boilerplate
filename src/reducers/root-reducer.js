@@ -5,8 +5,9 @@ import { addTodoReducer, deleteTodoReducer, editTodoReducer } from './reducers'
 import { store } from '../store/store'
 
 const initialState = {
-  blogText = '',
+  blogText: '',
   subcribed: false,
+  createBlog: true
 
 };
 
@@ -18,7 +19,6 @@ const rootReducer = (store = initialState, action) => {
         return editTodo(state,action);
     case 'submitBlog':
         return editTodoReducer(state,action);
-    case ''
     default: return store;
   }
 };
