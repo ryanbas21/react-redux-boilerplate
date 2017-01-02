@@ -5,14 +5,15 @@ import { addTodoReducer, deleteTodoReducer, editTodoReducer } from './reducers'
 import { store } from '../store/store'
 
 const initialState = {
-  blogText: '',
   subcribed: false,
-  createBlog: true
+  createBlog: ''
 
 };
 
 const rootReducer = (store = initialState, action) => {
   switch (action.type){
+    case 'getBlog':
+         return getBlogReducer(state,action);
     case 'subscribe':
         return subscribeReducer(state, action);
     case 'editBlog':

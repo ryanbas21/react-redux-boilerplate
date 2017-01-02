@@ -1,7 +1,7 @@
 import redux from 'redux'
 import reactRedux from 'react-redux'
 import * as action from '../actions/actions'
-
+import axios from 'axios';
 const addSubscriber = (state,action) => {
     const newState = {};
     Object.assign(newState,state,{ subscribe: action.value });
@@ -18,5 +18,11 @@ const editBlogPost = (state, action) => {
     const newState = {};
     Object.assign(newState, state, { editBlogPost: action.value })
     return newState;
+};
+
+const getBlogReducer = (state, action) => {
+    const newState = {}
+    Object.assign(newState, state, { getBlog: JSON.parse(response) } );
+    return newState
 };
 export default { addSubscriber, addBlogPost, editBlogPost };

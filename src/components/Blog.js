@@ -4,8 +4,9 @@ import { store } from '../store/store';
 const Blog = props =>
 <div>
     <div id='blog-section'>
-        <CreateBlog  />
+        <PostedBlog createdBlog={store.createdBlog}/>
     </div>
+    <CreateBlog  />
    This is the blog component
 </div>
 
