@@ -1,7 +1,6 @@
 import redux from 'redux'
 import reactRedux from 'react-redux'
 import * as action from '../actions/actions'
-import axios from 'axios';
 const addSubscriber = (state,action) => {
     const newState = {};
     Object.assign(newState,state,{ subscribe: action.value });

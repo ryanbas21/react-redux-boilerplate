@@ -40,19 +40,11 @@ module.exports = {
  module: {
    loaders: [
      {
-	   loader: 'babel-loader',
-	   query: {
-		 presets: ['react', 'es2015', 'react-hmre']
-	   },
-	   test: /\.jsx?$/,
-       include: __dirname,
-	   exclude: /(node_modules|bower_components)/
-   },
-   {
-    test: /\.json?$/,
-    loader: 'json'
-	},
-	{
+	   loader: 'babel-loader', query: { presets: ['react', 'es2015', 'react-hmre'] },
+	   test: /\.jsx?$/,include: __dirname, exclude: /(node_modules|bower_components)/
+     },
+     { test: /\.json?$/, loader: 'json' },
+	   {
       test: /\.js$/,
       exclude: /node_modules/,
       loader: "babel",
@@ -60,8 +52,12 @@ module.exports = {
       query: {
         presets: [ 'es2015', 'react', 'react-hmre' ]
       }
-  },
-  { test: /\.css$/, loaders: ["style","css"], }
+    },
+    { test: /\.css$/, loaders: ["style","css"] },
+    { test: /\.scss$/, loaders: ["style-loader", "css-loader", "sass-loader"] }
    ],
  },
+ sassLoader: {
+    includePaths: [path.resolve(__dirname, "./node_modules")]
+  }
 };
