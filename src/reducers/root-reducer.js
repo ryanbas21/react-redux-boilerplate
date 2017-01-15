@@ -1,7 +1,7 @@
 import redux from 'redux'
 import reactRedux from 'react-redux'
 import * as actions from '../actions/actions'
-import { addSubscriber, addBlogPost, editBlogPost, getBlogReducer } from './reducers'
+import Reducers from './reducers'
 import { store } from '../store/store'
 import { combineReducers } from 'redux'
 import { routerReducer } from 'react-router-redux'
@@ -13,10 +13,7 @@ const initialState = {
 };
 
 const rootReducer = combineReducers({
-   addSubscriber,
-   addBlogPost,
-   editBlogPost,
-   getBlogReducer,
+   Reducers,
    routing: routerReducer
   }
 )

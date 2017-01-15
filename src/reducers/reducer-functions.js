@@ -16,7 +16,7 @@ export const editBlogPost = (state, action) => {
     return newState;
 };
 
-export export const getBlogReducer = (state, action) => {
+export const getBlogReducer = (state, action) => {
     const newState = {}
     Object.assign(newState, state, { getBlog: JSON.parse(response) } );
     return newState

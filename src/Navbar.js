@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router';
 
 const NavBar = props =>
-<nav className='' id='myTopnav' role='menubar' ariaLabel="breadcrumbs">
+<nav className='' id='myTopnav' role='menubar' >
       <li type='horizontal'><Link to='/'> Home </Link></li>
       <li type='horizontal'><Link to='/contact'> Contact Us </Link></li>
       <li type='horizontal'><Link to='/disclaimer'> Disclaimer </Link></li>

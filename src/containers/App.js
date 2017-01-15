@@ -5,7 +5,7 @@ import NavBar from '../navbar'
 import axios from 'axios';
 import { bindActionCreators } from 'redux'
 import * as actions from '../actions/actions'
-
+import { connect } from 'react-redux'
 class AppContainer extends Component {
     constructor(props){
         super(props);
