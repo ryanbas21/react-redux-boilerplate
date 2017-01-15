@@ -3,6 +3,8 @@ import { render } from 'react-dom'
 import { store } from '../store/store'
 import NavBar from '../navbar'
 import axios from 'axios';
+import { bindActionCreators } from 'redux'
+import * as actions from '..actions/actions'
 
 class AppContainer extends Component {
     constructor(props){
@@ -34,5 +36,17 @@ class AppContainer extends Component {
     }
 }
 
+
+
+
+function mapStateToProps (state) {
+  return {
+
+  }
+}
+function mapDispatchToProps (dispatch) {
+  return bindActionCreators(actionCreators, dispatch)
+}
+export const connector = connect(mapStateToProps,mapDispatchToProps);
 
 export default AppContainer

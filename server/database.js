@@ -1,9 +1,6 @@
 const Sequelize = require('sequelize');
 const {DatabaseUsername, DatabasePassword, DatabaseURL, DatabasePORT } = require('./config.secret')
-const sequelize = new Sequelize(DatabaseURL,DatabaseUsername,DatabasePassword, {
-      dialect: "mysql",
-      port:    DatabasePORT,
-    });
+const sequelize = new Sequelize(DatabaseURL);
 
 sequelize
   .authenticate()

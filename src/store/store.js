@@ -1,11 +1,17 @@
-import { createStore } from 'redux';
 import rootReducer from '../reducers/root-reducer';
 import { connect } from 'react-redux'
-// import * as types from 'actions/actions';
-const mapStateToProps = {};
-const mapDispatchToProps = {};
+import { createStore, compose } from 'redux'
+import { browserHistory } from 'react-router'
+import { syncHistoryWithStore } from 'react-router-redux'
 
-const store = createStore(rootReducer);
-const connector = connect(mapStateToProps,mapDispatchToProps);
+const defaultState = {
+  posts,
+  comments
+}
 
-export default { store, connector };
+export const history = syncHistoryWithStore(browserHistory, store)
+const store = createStore(rootReducer,defaultState, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()););
+
+
+
+export default store;

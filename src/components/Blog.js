@@ -1,10 +1,10 @@
 import React from 'react'
-import CreateBlog from './createBlog';
-import { store } from '../store/store';
+import CreateBlog from './postedblog';
+import store  from '../store/store';
 const Blog = props =>
 <div>
     <div id='blog-section'>
-        <PostedBlog createdBlog={store.createdBlog}/>
+        <CreateBlog createdBlog={store.createdBlog}/>
     </div>
     <CreateBlog  />
    This is the blog component

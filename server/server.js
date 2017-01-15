@@ -8,7 +8,7 @@ const { getUser, createUser } = require('./controllers/login-controller');
 
 bodyParser.urlencoded({ extended: false });
 app.use(bodyParser.json());
-app.use(cookieparser());
+app.use(cookieParser());
 
 // app.use(express.static(__dirname + '../public/'))
 app.use((req,res,next) => {
