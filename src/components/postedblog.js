@@ -1,8 +1,8 @@
 import React from 'react';
 
-const CreateBlog = props =>
+const PostedBlog = props =>
 <div>
     { props.createdBlog }
 </div>
 
-export default CreateBlog;
+export default PostedBlog;
