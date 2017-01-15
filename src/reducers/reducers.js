@@ -1,27 +1,21 @@
 import redux from 'redux'
 import reactRedux from 'react-redux'
 import * as action from '../actions/actions'
-const addSubscriber = (state,action) => {
-    const newState = {};
-    Object.assign(newState,state,{ subscribe: action.value });
-    return newState
-};
+import { addSubscriber, getBlogReducer, editBlogPost, subscribe } from './reducer-functions'
 
-const addBlogPost = (state, action) => {
-    const newState = {};
-    Object.assign(newState, state, { addBlogPost: action.value });
-    return newState;
-};
 
-const editBlogPost = (state, action) => {
-    const newState = {};
-    Object.assign(newState, state, { editBlogPost: action.value })
-    return newState;
-};
+function Reducers ( state = {}, action) {
+    switch(action.type){
+        case 'subscribe' :
+         return addSubscriber(state,action)
+        case 'editBlog' :
+          return editBlogPost
+        case 'addBlog' :
+          return addBlogPost
+        case 'getBlogReducer' :
+          return getBlogReducer
+        default : return state
+    }
+}
 
-const getBlogReducer = (state, action) => {
-    const newState = {}
-    Object.assign(newState, state, { getBlog: JSON.parse(response) } );
-    return newState
-};
-export default { addSubscriber, addBlogPost, editBlogPost };
+export default Reducers

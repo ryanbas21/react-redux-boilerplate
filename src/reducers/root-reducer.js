@@ -1,8 +1,10 @@
 import redux from 'redux'
 import reactRedux from 'react-redux'
 import * as actions from '../actions/actions'
-import { addTodoReducer, deleteTodoReducer, editTodoReducer } from './reducers'
+import { addSubscriber, addBlogPost, editBlogPost, getBlogReducer } from './reducers'
 import { store } from '../store/store'
+import { combineReducers } from 'redux'
+import { routerReducer } from 'react-router-redux'
 
 const initialState = {
   subcribed: false,
@@ -10,17 +12,12 @@ const initialState = {
 
 };
 
-const rootReducer = (store = initialState, action) => {
-  switch (action.type){
-    case 'getBlog':
-         return getBlogReducer(state,action);
-    case 'subscribe':
-        return subscribeReducer(state, action);
-    case 'editBlog':
-        return editTodo(state,action);
-    case 'submitBlog':
-        return editTodoReducer(state,action);
-    default: return store;
+const rootReducer = combineReducers({
+   addSubscriber,
+   addBlogPost,
+   editBlogPost,
+   getBlogReducer,
+   routing: routerReducer
   }
-};
+)
 export default rootReducer;

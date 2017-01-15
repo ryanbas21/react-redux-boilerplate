@@ -5,4 +5,4 @@ const CreateBlog = props =>
     { props.createdBlog }
 </div>
 
-export default CreateBlog
+export default CreateBlog;

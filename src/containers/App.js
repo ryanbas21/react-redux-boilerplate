@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
 import { render } from 'react-dom'
-import { store } from '../store/store'
+import store  from '../store/store'
 import NavBar from '../navbar'
 import axios from 'axios';
 import { bindActionCreators } from 'redux'
-import * as actions from '..actions/actions'
+import * as actions from '../actions/actions'
 
 class AppContainer extends Component {
     constructor(props){
