@@ -1,16 +1,19 @@
 import React from 'react'
 import { Link } from 'react-router';
-
+import Panel from 'muicss/lib/react/panel'
 const NavBar = props =>
-<nav className='' id='myTopnav' role='menubar' >
-      <li type='horizontal'><Link to='/'> Home </Link></li>
-      <li type='horizontal'><Link to='/contact'> Contact Us </Link></li>
-      <li type='horizontal'><Link to='/disclaimer'> Disclaimer </Link></li>
-      <li type='horizontal'><Link to='/login'> Log-In </Link></li>
-      <li type='horizontal'><Link to='/signup'> Sign Up </Link></li>
-      <li type='horizontal'><Link to='/blog' > Blog </Link></li>
-      <li type='horizontal'><Link to='/subscribe'> Subscribe </Link></li>
+<Panel>
+<nav className='nav-horizontal' role='menubar' >
+      <li className='nav-horizontal-item'><Link to='/'> Home </Link></li>
+      <li className='nav-horizontal-item'><Link to='/contact'> Contact Us </Link></li>
+      <li className='nav-horizontal-item'><Link to='/disclaimer'> Disclaimer </Link></li>
+      <li className='nav-horizontal-item'><Link to='/login'> Log-In </Link></li>
+      <li className='nav-horizontal-item'><Link to='/signup'> Sign Up </Link></li>
+      <li className='nav-horizontal-item'><Link to='/blog' > Blog </Link></li>
+      <li className='nav-horizontal-item'><Link to='/subscribe'> Subscribe </Link></li>
 </nav>
+</Panel>
+
 
 
 export default NavBar;

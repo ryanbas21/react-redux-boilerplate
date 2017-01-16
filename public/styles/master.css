@@ -16,4 +16,38 @@
     background-repeat: no-repeat;
 }
 
-.log-in {}
+.login-container {
+    display: flex;
+    width: 100%;
+}
+
+.login-button {
+    display: flex;
+    font-size: .6em;
+}
+
+.nav-horizontal {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-horizontal:hover {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-horizontal-item {
+    list-style-type: none;
+    margin: 0;
+    padding: 20px;
+    display: inline;
+}
+
+.nav-horizontal-item:hover {
+    list-style-type: none;
+    margin: 0;
+    padding: 20px;
+    display: inline;
+}
