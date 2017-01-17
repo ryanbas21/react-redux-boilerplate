@@ -8,6 +8,13 @@
 
 .login-container-width {
     width: 500px;
+    height: 800px;
+}
+
+.disclaimer-container-text {
+    font-family: Tahoma;
+    text-align: center;
+    margin: 0 auto;
 }
 
 .write-blog {

@@ -18,7 +18,7 @@ const LoginForm = props => (
     <input type="password" required />
     <label>Password</label>
   </div>
-  <button type="submit" className="mui-btn mui-btn--raised login-button">Submit</button>
+  <Button type="submit" className="mui-btn mui-btn--raised login-button" color="accent">Submit</Button>
  </form>
 </Container>
 )
