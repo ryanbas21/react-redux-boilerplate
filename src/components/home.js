@@ -1,5 +1,6 @@
 import React from 'react'
 import Picture from './pictures'
+import { browserHistory } from 'react-router';
 const Home = props =>
 <div>
     <div>
@@ -7,7 +8,7 @@ const Home = props =>
        <button
             type='submit'
             className='button radius'
-            onClick={ () => window.location('/subscribe') }>
+            onClick={ () => browserHistory.push('/subscribe') }>
             Subscribe</button>
        <Picture />
      </div>

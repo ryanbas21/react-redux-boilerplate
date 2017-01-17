@@ -55,6 +55,14 @@ module.exports = {
     },
     { test: /\.css$/, loaders: ["style","css"] },
     { test: /\.scss$/, loaders: ["style-loader", "css-loader", "sass-loader"] },
+    {
+        test: /\.(gif|jpe?g|png|ico)$/,
+        loader: 'url-loader?limit=10000'
+    },
+    {
+      test: /\.(otf|eot|svg|ttf|woff|woff2).*$/,
+      loader: 'url-loader?limit=10000'
+    }
    ],
  },
  sassLoader: {
