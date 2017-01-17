@@ -11,10 +11,15 @@
     height: 800px;
 }
 
+.disclaimer-body {
+    text-align: center;
+}
+
 .disclaimer-container-text {
     font-family: Tahoma;
     text-align: center;
     margin: 0 auto;
+    display: flex;
 }
 
 .write-blog {

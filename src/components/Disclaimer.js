@@ -5,6 +5,7 @@ import Col from 'muicss/lib/react/col';
 const Disclaimer = props =>
 <Container className='disclaimer-container-text'>
     <header>Disclaimer</header>
+    <div className='disclaimer-body'>
     <Row>
         <p><Col fluid={true} md="4">EPB Newsletter is published as an information service.  It includes opinions as to buying, selling and holding various stocks and other securities.</Col></p>
     </Row>
@@ -26,6 +27,7 @@ const Disclaimer = props =>
     <Row>
         <p><Col fluid={true} md="4">Past results are not necessarily indicative of future performance.</Col></p>
     </Row>
+    </div>
 </Container>
 
 module.exports = Disclaimer;
