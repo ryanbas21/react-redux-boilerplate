@@ -11,15 +11,23 @@
     height: 800px;
 }
 
-.disclaimer-body {
-    text-align: center;
+.disclaimer-container-text {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    width: 1000px;
+    height: auto;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    align-items: center;
+    justify-content: center;
+    line-height: 2;
 }
 
-.disclaimer-container-text {
-    font-family: Tahoma;
-    text-align: center;
-    margin: 0 auto;
-    display: flex;
+.disclaimer-body {
+    justify-content: center;
+    align-items: center;
 }
 
 .write-blog {
