@@ -22,7 +22,6 @@ render((
         <Route path='disclaimer' component={DisclaimerContainer} />
         <Route path='signup' component={SignUpContainer} />
         <Route path='login' component={LoginContainer} />
-        <Route path='blog' />
         <Route path='*' component={NotFound} />
     </Route>
     </Router>
