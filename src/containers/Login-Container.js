@@ -5,7 +5,7 @@ import Container from 'muicss/lib/react/container';
 
 const LoginContainer = props =>
 <div className='login-container'>
-      <LoginForm />
+      <LoginForm className='login-form'/>
 </div>
 
 module.exports = LoginContainer;

@@ -7,26 +7,18 @@ import Row from 'muicss/lib/react/row';
 import Col from 'muicss/lib/react/col';
 import Container from 'muicss/lib/react/container';
 const LoginForm = props => (
-<Container>
+<Container className='login-container-width'>
 <form type='submit' onSubmit={props.handleLogin}>
-  <legend>Title</legend>
-  <div className="mui-textfield">
-    <input type="text" required />
-    <label>Required Text Field</label>
-  </div>
+  <legend className='log-in-header'>Log In</legend>
   <div className="mui-textfield mui-textfield--float-label">
     <input type="email" required />
-    <label>Required Email Address</label>
-  </div>
-  <div className="mui-textfield mui-textfield--float-label">
-    <textarea ></textarea>
-    <label>Required Textarea</label>
-  </div>
-  <div className="mui-textfield mui-textfield--float-label">
-    <input type="email" value="Validation error" />
     <label>Email Address</label>
   </div>
-  <button type="submit" className="mui-btn mui-btn--raised">Submit</button>
+  <div className="mui-textfield mui-textfield--float-label">
+    <input type="password" required />
+    <label>Password</label>
+  </div>
+  <button type="submit" className="mui-btn mui-btn--raised login-button">Submit</button>
  </form>
 </Container>
 )

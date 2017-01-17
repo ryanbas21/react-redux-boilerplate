@@ -6,6 +6,10 @@
     height: auto;
 }
 
+.login-container-width {
+    width: 500px;
+}
+
 .write-blog {
     width: 400px;
     height: 120px;
@@ -19,11 +23,20 @@
 .login-container {
     display: flex;
     width: 100%;
+    align-content: center;
+    align-items:
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
 }
 
 .login-button {
-    display: flex;
-    font-size: .6em;
+    display: inline-block;
+    font-size: .8em;
+    float: right;
 }
 
 .nav-horizontal {
@@ -50,4 +63,8 @@
     margin: 0;
     padding: 20px;
     display: inline;
+}
+
+.log-in-header {
+    text-align: center;
 }
