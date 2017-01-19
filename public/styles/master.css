@@ -10,20 +10,22 @@ body {
     height: auto;
 }
 
+.disclaimer-div-container {
+    width: 90%;
+    margin: 0 auto;
+    display: block;
+}
+
 .login-container-width {
     width: 500px;
     height: 800px;
 }
 
 .disclaimer-container-text {
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    width: 1000px;
+    display: block;
+    margin: 0 auto;
+    width: 50%;
     height: auto;
-    -ms-flex-align: center;
-    -webkit-align-items: center;
-    -webkit-box-align: center;
     align-items: center;
     justify-content: center;
     line-height: 2;

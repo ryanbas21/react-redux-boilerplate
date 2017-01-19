@@ -6,6 +6,7 @@ const headerStyle = {
     'textAlign':'center'
 }
 const Disclaimer = props =>
+<div className='disclaimer-div-container'>
 <Container className='disclaimer-container-text'>
     <div className='disclaimer-body'>
     <Row>
@@ -34,5 +35,6 @@ const Disclaimer = props =>
     </Row>
    </div>
 </Container>
+</div>
 
 module.exports = Disclaimer;
