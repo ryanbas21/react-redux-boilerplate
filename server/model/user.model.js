@@ -13,6 +13,10 @@ const User = {
     type: Sequelize.STRING,
     allowNull: false
   },
+  name: {
+    ttype: Sequelize.STRING,
+    allowNull: false
+  }
 };
 
 module.exports = User;
