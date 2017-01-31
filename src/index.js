@@ -10,6 +10,7 @@ import SignUpContainer from './containers/SignupContainer';
 import BlogContainer from './containers/BlogContainer';
 import SubscribeContainer from './containers/SubscribeContainer';
 import DisclaimerContainer from './containers/Disclaimer-Container';
+import CreateBlog from './components/createBlog'
 import NotFound from './components/NotFound'
 import store, { history } from './store/store'
 render((
@@ -22,6 +23,10 @@ render((
         <Route path='disclaimer' component={DisclaimerContainer} />
         <Route path='signup' component={SignUpContainer} />
         <Route path='login' component={LoginContainer} />
+        <Route path='blog'>
+            <IndexRoute component={BlogContainer} />
+            <Route path='createblog' component={CreateBlog} />
+        </Route>
         <Route path='*' component={NotFound} />
     </Route>
     </Router>

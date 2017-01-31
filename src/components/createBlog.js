@@ -3,8 +3,10 @@ import store from '../store/store'
 
 const CreateBlog = props =>
 <div className='blog-text-container'>
-  <textarea wrap='soft' className='write-blog' required='required' placeholder='Write your post here'></textarea>
-  <button type='submit' onClick={props.submitBlog}>Submit</button>
+  <form method="post" action='/submitblog'>
+  Blog Name : <input type="text" />
+  Import File: <input type="file" />
+</form>
 </div>
 
-export default CreateBlog;
+module.exports = CreateBlog;

@@ -12,13 +12,10 @@ class AppContainer extends Component {
         this.submitBlog = this.submitBlog.bind(this)
         this.handleLogin = this.handleLogin.bind(this)
     }
+
     handleLogin(){}
     submitBlog(blog){
-        axios.post('/submitblog',{ blog })
-             .then( response => {
-                 console.log(response);
-             })
-             .catch( err => console.log(err))
+      
     }
     render() {
         let children = React.Children.map(this.props.children, child => React.cloneElement(child, {
