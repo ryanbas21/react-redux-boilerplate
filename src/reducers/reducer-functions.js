@@ -12,7 +12,8 @@ export const addBlogPost = (state, action) => {
 
 export const editBlogPost = (state, action) => {
     const newState = {};
-    Object.assign(newState, state, { editBlogPost: action.value })
+    console.log('edit blog post reducer is being fired, action is', action)
+    Object.assign(newState, state, action.value)
     return newState;
 };
 

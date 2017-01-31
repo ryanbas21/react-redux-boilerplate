@@ -13,9 +13,23 @@ class AppContainer extends Component {
         this.handleLogin = this.handleLogin.bind(this)
     }
 
-    handleLogin(){}
-    submitBlog(blog){
-      axios.post(blog)
+    handleLogin(){
+      //TODO update logins
+      //TODO make ajax call and store to db
+      //TODO authenticate
+    }
+    submitBlog(e,form){
+      e.preventDefaults
+      const { editBlog } = actions.default
+      console.log(form,'this is the value of the form');
+      store.dispatch({type:editBlog, value: form})
+      console.log('hey this means the form was submiitted');
+      axios.post('/submitblog', form)
+           .then( result => {
+             //TODO update store with result
+             return result;
+           })
+           .catch ( err => console.log(err));
     }
     render() {
         let children = React.Children.map(this.props.children, child => React.cloneElement(child, {

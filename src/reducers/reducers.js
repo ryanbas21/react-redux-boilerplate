@@ -9,11 +9,11 @@ function Reducers ( state = {}, action) {
         case 'subscribe' :
          return addSubscriber(state,action)
         case 'editBlog' :
-          return editBlogPost
+          return editBlogPost(state,action)
         case 'addBlog' :
-          return addBlogPost
+          return addBlogPost(state,action)
         case 'getBlogReducer' :
-          return getBlogReducer
+          return getBlogReducer(state,action)
         default : return state
     }
 }
