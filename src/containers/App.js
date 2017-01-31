@@ -15,7 +15,7 @@ class AppContainer extends Component {
 
     handleLogin(){}
     submitBlog(blog){
-      
+      axios.post(blog)
     }
     render() {
         let children = React.Children.map(this.props.children, child => React.cloneElement(child, {
