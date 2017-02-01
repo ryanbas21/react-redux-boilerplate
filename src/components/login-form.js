@@ -1,25 +1,17 @@
 import React from 'react'
-import Form from 'muicss/lib/react/form';
-import Input from 'muicss/lib/react/input';
-import Textarea from 'muicss/lib/react/textarea';
-import Button from 'muicss/lib/react/button';
-import Row from 'muicss/lib/react/row';
-import Col from 'muicss/lib/react/col';
-import Container from 'muicss/lib/react/container';
-const LoginForm = props => (
-<Container className='login-container-width'>
+
+const LoginForm = props =>
 <form type='submit' onSubmit={props.handleLogin}>
   <legend className='log-in-header'>Log In</legend>
-  <div className="mui-textfield mui-textfield--float-label">
+  <div className="">
     <input type="email" required />
     <label>Email Address</label>
   </div>
-  <div className="mui-textfield mui-textfield--float-label">
+  <div className="">
     <input type="password" required />
     <label>Password</label>
   </div>
-  <Button type="submit" className="mui-btn mui-btn--raised login-button" color="accent">Submit</Button>
- </form>
-</Container>
-)
+  <button type="submit" className="">Submit</button>
+</form>
+
 module.exports = LoginForm;

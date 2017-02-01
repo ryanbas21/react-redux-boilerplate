@@ -4,10 +4,10 @@ import Input from 'muicss/lib/react/input';
 const SignupForm = props =>
         <Form>
           <legend>SignUp</legend>
-          Name:<Input label="name" floatingLabel={true} defaultValue="Name"/>
-          Email:<Input label="email" floatingLabel={true} defaultValue="Email" />
-          <Textarea label="location" floatingLabel={true} defaultValue="Location" />
-          <Button variant="raised">Submit</Button>
+          Name:     <input label="name"  placeholder="Name"/>
+          Email:    <input label="email"  placeholder="Email" />
+          Location: <input label="location"  placeholder="Location" />
+          <button variant="raised">Submit</button>
         </Form>
 
 

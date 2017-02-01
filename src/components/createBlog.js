@@ -7,8 +7,8 @@ const formValue = {}
 return (
 <div className='blog-text-container'>
   <form method="post" onSubmit={ () => props.submitBlog(formValue)}>
-  Blog Name : <input value={formValue.value} type="text" />
-  Import File: <input value={formValue.file} type="file" />
+  <label>Blog Name :</label><input value={formValue.value} type="text" /><br />
+  <label>Import File:</label><input value={formValue.file} type="file" /><br />
   <button type="submit">Submit</button>
 </form>
 </div>
