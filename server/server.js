@@ -27,6 +27,6 @@ app.get('/signup', (req,res) => res.status(200))
 app.get('/contact', (req,res) => res.status(200))
 app.get('/blog', (req,res) => res.status(200))
 app.get('/ism', (req,res) => res.sendFile(path.join(__dirname,"./assets/","ism.png")))
-app.post('/submitblog', saveBlog, (req,res) => res.status(200).send(req.body))
+app.post('/blog/submitblog', saveBlog, (req,res) => res.status(200))
 
 app.listen((req,res) => console.log('running server on port 3000'));

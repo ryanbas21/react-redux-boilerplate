@@ -2,8 +2,8 @@ const sequelize = require('../database')
 const { User } = require('../model/blog.model')
 module.exports = {
   saveBlog(req,res,next) {
+    res.setHeader('content-type', 'application/json', 'utf-8');
     console.log('here');
-    console.log(req.body);
     const file = req.body
     sequelize.save()
               .then( result => {

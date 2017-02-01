@@ -2,16 +2,16 @@ import React from 'react'
 
 const LoginForm = props =>
 <form type='submit' onSubmit={props.handleLogin}>
-  <legend className='log-in-header'>Log In</legend>
-  <div className="">
+  <legend>Log In</legend>
+  <div >
     <input type="email" required />
     <label>Email Address</label>
   </div>
-  <div className="">
+  <div>
     <input type="password" required />
     <label>Password</label>
   </div>
-  <button type="submit" className="">Submit</button>
+  <button type="submit">Submit</button>
 </form>
 
 module.exports = LoginForm;
