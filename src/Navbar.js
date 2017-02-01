@@ -1,8 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router';
-import Panel from 'muicss/lib/react/panel'
+
 const NavBar = props =>
-<Panel>
 <nav className='nav-horizontal' role='menubar' >
       <li className='nav-horizontal-item'><Link to='/'> Home </Link></li>
       <li className='nav-horizontal-item'><Link to='/contact'> Contact Us </Link></li>
@@ -12,7 +11,6 @@ const NavBar = props =>
       <li className='nav-horizontal-item'><Link to='/blog'> Blog </Link></li>
       <li className='nav-horizontal-item'><Link to='/subscribe'> Subscribe </Link></li>
 </nav>
-</Panel>
 
 
 

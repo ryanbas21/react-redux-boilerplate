@@ -1,10 +1,11 @@
-const sequelize = require('../database')
+const { sequelize } = require('../database')
 const { User } = require('../model/blog.model')
 module.exports = {
   saveBlog(req,res,next) {
     res.setHeader('content-type', 'application/json', 'utf-8');
     console.log('here');
     const file = req.body
+    console.log(file);
     sequelize.save()
               .then( result => {
                 console.log(`stored ${result}`);

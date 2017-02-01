@@ -1,5 +1,5 @@
 import React from 'react'
-import Container from 'muicss/lib/react/container';
+
 
 const Picture = props =>
   <div>

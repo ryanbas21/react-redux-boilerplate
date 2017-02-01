@@ -1,10 +1,5 @@
 import React from 'react'
-import Container from 'muicss/lib/react/container';
-import Row from 'muicss/lib/react/row';
-import Col from 'muicss/lib/react/col';
-const headerStyle = {
-    'textAlign':'center'
-}
+
 const Disclaimer = props =>
 <div className='disclaimer-div-container'>
     <div className='disclaimer-body'>
