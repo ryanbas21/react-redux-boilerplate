@@ -4,6 +4,7 @@ const bodyParser = require('body-parser')
 const cookieParser = require('cookie-parser')
 const cors = require('cors')
 const PORT = 3000;
+const server = require('http').createServer(app);
 const path = require('path');
 const { getUser, createUser } = require('./controllers/login-controller');
 const { saveBlog } = require('./controllers/blog')
@@ -19,8 +20,8 @@ app.use((req,res,next) => {
   next();
 });
 
-app.get('/', (req,res) => res.status(200));
-app.post('/blog/createblog', (req,res) => res.status(200))
+app.get('/', (req,res) => res.status(200).send('hey this worked'));
+app.post('/blog/createblog', (req,res) => res.status(200).send('hi'))
 app.get('/disclaimer', (req,res) => res.status(200))
 app.get('/subscribe', (req,res) => res.status(200))
 app.get('login', (req,res) => res.status(200))
@@ -30,4 +31,4 @@ app.get('/blog', (req,res) => res.status(200))
 app.get('/ism', (req,res) => res.sendFile(path.join(__dirname,"./assets/","ism.png")))
 app.post('/blog/submitblog', saveBlog, (req,res) => res.status(200))
 app.post('/poop', (req,res) => console.log('nice'))
-app.listen('localhost', (req,res) => console.log('running server on port 3000'));
+server.listen(PORT, 'localhost', (req,res) => console.log('running server on port 3000'));
