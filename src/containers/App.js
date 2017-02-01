@@ -24,9 +24,10 @@ class AppContainer extends Component {
 
       const { editBlog } = actions.default
 
-      axios.post('http://localhost:3000/submitblog', JSON.stringify( { test: 'test'}) )
+      axios.post('http://localhost:3000/blog/submitblog', JSON.stringify( { test: 'test'}) )
            .then( result => {
              //TODO update store with result
+             browserHistory.push('/blog')
              console.log(JSON.parse(result), 'returning stuff!' );
              store.dispatch({type:editBlog, value: form})
              return result;
