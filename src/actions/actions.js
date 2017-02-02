@@ -3,4 +3,5 @@ const editBlog = 'editBlog'
 const addBlog = 'addBlog'
 const deleteBlogPost = 'deleteBlogPost';
 const submitBlog = 'submitBlog'
-export default { subscribe, subscribe, editBlog, addBlog, deleteBlogPost, submitBlog };
+const getBlog = 'getBlog'
+export default { getBlog, subscribe, subscribe, editBlog, addBlog, deleteBlogPost, submitBlog };

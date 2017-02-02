@@ -12,7 +12,7 @@ function Reducers ( state = {}, action) {
           return editBlogPost(state,action)
         case 'addBlog' :
           return addBlogPost(state,action)
-        case 'getBlogReducer' :
+        case 'getBlog' :
           return getBlogReducer(state,action)
         default : return state
     }
