@@ -3,8 +3,6 @@ import store from '../store/store'
 
 
 class RenderBlogPosts extends Component {
-  constructor() {}
-
   onComponentWillMount(e) {
     e.preventDefaults;
     axios.get('http://localhost:3000/getBlogPosts')
@@ -19,7 +17,7 @@ class RenderBlogPosts extends Component {
   render() {
     return (
       <div>
-        {...store.blogPosts}
+        {}
       </div>
 
     )
