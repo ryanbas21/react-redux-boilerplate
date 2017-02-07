@@ -43,10 +43,7 @@ class AppContainer extends Component {
        }));
         return (
         <div>
-            <div>
-                <NavBar />
-            </div>
-                {children}
+            {children}
         </div>
         )
     }

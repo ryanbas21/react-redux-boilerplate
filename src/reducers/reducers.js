@@ -1,19 +1,19 @@
 import redux from 'redux'
 import reactRedux from 'react-redux'
 import * as action from '../actions/actions'
-import { addSubscriber, getBlogReducer, editBlogPost, subscribe } from './reducer-functions'
+import {  } from './reducer-functions' //import reducer functions
 
 
 function Reducers ( state = {}, action) {
     switch(action.type){
-        case 'subscribe' :
-         return addSubscriber(state,action)
-        case 'editBlog' :
-          return editBlogPost(state,action)
-        case 'addBlog' :
-          return addBlogPost(state,action)
-        case 'getBlog' :
-          return getBlogReducer(state,action)
+        case '' :
+         return
+        case '' :
+          return
+        case '' :
+          return
+        case '' :
+          return 
         default : return state
     }
 }

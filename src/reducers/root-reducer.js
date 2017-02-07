@@ -6,9 +6,8 @@ import { store } from '../store/store'
 import { combineReducers } from 'redux'
 import { routerReducer } from 'react-router-redux'
 require('../../public/styles/master.css');
+
 const initialState = {
-  subcribed: false,
-  createBlog: ''
 
 };
 
@@ -17,4 +16,5 @@ const rootReducer = combineReducers({
    routing: routerReducer
   }
 )
+
 export default rootReducer;
